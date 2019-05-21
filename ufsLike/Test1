@@ -1,0 +1,24 @@
+#!/bin/bash
+ 
+./ufs format
+./ufs ls /
+./ufs mkdir /doc
+./ufs ls /
+./ufs mkdir /tmp
+./ufs ls /
+./ufs mkdir /tmp/lib
+./ufs ls /
+./ufs ls /tmp
+./ufs mkdir /tmp/lib/deep
+./ufs ls /tmp/lib/deep
+./ufs rm /tmp/lib/deep
+./ufs rm /tmp/lib
+./ufs rm /tmp
+./ufs ls / 
+./ufs create /a.txt
+./ufs ls /  
+./ufs rm /a.txt
+./ufs ls / 
+
+./ufs format
+./ufs ls /
